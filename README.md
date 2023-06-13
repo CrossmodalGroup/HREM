@@ -95,7 +95,7 @@ python eval.py  --data_path data/ --dataset coco
 
 
 ## Performances
-The following tables show the results of image-to-text retrieval on **MSCOCO** and **Flickr30K** datasets. In these experiments, we use the **BUTD region** featues for images, and use the **BERT-base** as the textual encoder. We also provide the training logs in ```runs/``` folder and checkpoint files for two datasets.
+The following tables show the results of image-to-text retrieval on **MSCOCO** and **Flickr30K** datasets. In these experiments, we use the **BUTD region** featues for images, and use the **BERT-base** as the textual encoder. We also provide the training logs and checkpoint files for two datasets.
 
 
 |Datasets| Interaction type |I2T R@1|I2T R@5|T2I R@1|T2I R@5|Model checkpoint|

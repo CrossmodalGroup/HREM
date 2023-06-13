@@ -1,0 +1,15 @@
+opencv-python
+transformers
+Cython
+easydict
+future
+imageio
+matplotlib
+nltk
+Pillow
+PyYAML
+scikit-learn
+scipy
+six
+tensorboard-logger
+tqdm

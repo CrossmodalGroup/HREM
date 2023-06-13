@@ -2,7 +2,7 @@
 
 
 The codes for our paper "[Learning Semantic Relationship among Instances for Image-Text Matching](https://openaccess.thecvf.com/content/CVPR2023/html/Fu_Learning_Semantic_Relationship_Among_Instances_for_Image-Text_Matching_CVPR_2023_paper.html)", which is accepted by the  IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2023.
-We referred to the implementations of [GPO](https://github.com/woodfrog/vse_infty), [VSE++](https://github.com/fartashf/vsepp), [SCAN](https://github.com/kuanghuei/SCAN), and [NAAF](https://github.com/CrossmodalGroup/NAAF) to build up our codes, we appreciate their contributions. 
+We referred to the implementations of [GPO](https://github.com/woodfrog/vse_infty), [VSE++](https://github.com/fartashf/vsepp), [SCAN](https://github.com/kuanghuei/SCAN), and [NAAF](https://github.com/CrossmodalGroup/NAAF) to build up our codes. 
 
 
 ## Introduction

@@ -10,9 +10,7 @@ We referred to the implementations of [GPO](https://github.com/woodfrog/vse_inft
 Image-text matching, a bridge connecting image and language, is an important task, which generally learns a holistic cross-modal embedding to achieve a high-quality semantic alignment between the two modalities. 
 
 <img src="imgs/overview.png" width="100%">
-However, previous studies only focus on capturing fragment-level relation within a sample from a particular modality, e.g., salient regions in an image or text words in a sentence, where they usually pay less attention to capturing instance-level interactions among samples and modalities, e.g., multiple images and texts. In this paper, we argue that sample relations could help learn subtle differences for hard negative instances, and thus transfer shared knowledge for infrequent samples should be promising in obtaining better holistic embeddings. 
-
-Therefore, we propose a novel hierarchical relation modeling framework (HREM), which explicitly capture both fragment- and instance-level relations to learn discriminative and robust cross-modal embeddings. Extensive experiments on Flickr30K and MS-COCO show our proposed method outperforms the state-of-the-art methods.
+However, previous studies only focus on capturing fragment-level relation within a sample from a particular modality, e.g., salient regions in an image or text words in a sentence, where they usually pay less attention to capturing instance-level interactions among samples and modalities, e.g., multiple images and texts. In this paper, we argue that sample relations could help learn subtle differences for hard negative instances, and thus transfer shared knowledge for infrequent samples should be promising in obtaining better holistic embeddings. Therefore, we propose a novel hierarchical relation modeling framework (HREM), which explicitly capture both fragment- and instance-level relations to learn discriminative and robust cross-modal embeddings. Extensive experiments on Flickr30K and MS-COCO show our proposed method outperforms the state-of-the-art methods.
 
 
 ## Preparation
@@ -20,9 +18,9 @@ Therefore, we propose a novel hierarchical relation modeling framework (HREM), w
 ### Environments
 We recommend the following key dependencies.
 
-- python 3.8
-- torch 1.7.0
-- torchvision 0.8.0
+- python >= 3.8
+- torch >= 1.7.0
+- torchvision >= 0.8.0
 - transformers >=2.1.1
 - opencv-python
 - tensorboard
@@ -53,7 +51,6 @@ data
 │   ├── test_caps.txt
 │   ├── ......
 │
-│
 ├── bert-base-uncased    # the pretrained ckpt files for BERT-base
 │   ├── config.json
 │   ├── tokenizer_config.txt
@@ -70,10 +67,10 @@ We first need set up the related **arguments** for the datasets and models paths
 -  `--data_path`: the root path of datasets, e.g., `data/`
 -  `--bert_path`: the path of pretrained model files of BERT-base, e.g., `data/bert-base-uncased`
 - `--gpu-id`, the chosen GPU number, e.g., 0-7
-- `logger_name`, the path of logger files, e.g., `runs/f30k_test`
+- `--logger_name`, the path of logger files, e.g., `runs/f30k_test` or `runs/coco_test`
 
 
-Assuming we have set all the paths, including the model weights and the datasets, we run the ```train.py``` for training (run on one RTX-3090 GPU)
+Assuming we have set all the paths, including the model weights and the datasets, we run the ```train.py``` for training (need one RTX-3090 GPU)
 
 
 ```

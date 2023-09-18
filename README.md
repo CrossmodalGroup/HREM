@@ -27,7 +27,7 @@ We recommend the following key dependencies.
 
 
 ### Data
-We organize all dataset in the following manner like [GPO](https://github.com/woodfrog/vse_infty), we first need download the pre-computed BUTD region features provides by [SCAN](https://github.com/kuanghuei/SCAN#download-data). You also can download the dataset through Baidu Cloud. Download links are [Flickr30K](https://pan.baidu.com/share/init?surl=Fr_bviuWLcrJ9MiiRn_H2Q) and [MSCOCO](https://pan.baidu.com/share/init?surl=vp3gtQhT7GO0PQACBSnOrQ), the extraction code is: USTC.
+We organize all dataset in the following manner like [GPO](https://github.com/woodfrog/vse_infty), we first need download the pre-computed BUTD region features provides by [SCAN](https://www.kaggle.com/datasets/kuanghueilee/scan-features) (The official authors). You also can download the dataset through Baidu Cloud. Download links are [Flickr30K](https://pan.baidu.com/share/init?surl=Fr_bviuWLcrJ9MiiRn_H2Q) and [MSCOCO](https://pan.baidu.com/share/init?surl=vp3gtQhT7GO0PQACBSnOrQ), the extraction code is: USTC.
 
 We need get the pretrained checkpoint files for [BERT-base](https://huggingface.co/bert-base-uncased) model. You also can use the pretrained checkpoint downloaded by [transformers](https://github.com/huggingface/transformers) automatically, just set ```BertModel.from_pretrained('bert-base-uncased')``` and ```BertTokenizer.from_pretrained('bert-base-uncased')```, then the files will be downloaded at  `~/.cache`.
 

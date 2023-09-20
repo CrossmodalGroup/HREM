@@ -70,7 +70,7 @@ We first need set up the related **arguments** for the datasets and models paths
 - `--logger_name`, the path of logger files, e.g., `runs/f30k_test` or `runs/coco_test`
 
 
-Assuming we have set all the paths, including the model weights and the datasets, we run the ```train.py``` for training (need one RTX-3090 GPU)
+Assuming we have set all the paths, including the model weights and the datasets, we run the ```train.py``` for training. The training script need **about 20,000 GPU-Memory** (one RTX-3090 GPU).
 
 
 ```

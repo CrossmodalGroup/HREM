@@ -221,8 +221,8 @@ class AdjacencyModel(nn.Module):
         # step-1 get connection relation
         # two situations：single-modal，cross-modal
         with torch.no_grad():
-            batch_sim_t2t = torch.matmul(img_emb, img_emb.t())
-            batch_sim_i2i = torch.matmul(cap_emb, cap_emb.t())  
+            batch_sim_t2t = torch.matmul(cap_emb, cap_emb.t())
+            batch_sim_i2i = torch.matmul(img_emb, img_emb.t())  
 
             # Boolean type matrix returned by logical judgment
             batch_t2t_connect = (batch_sim_t2t - batch_sim_t2t.topk(k=int(n_cap*self.threshold), dim=1, largest=True)[0][:, -1:]) >= 0

@@ -105,12 +105,11 @@ The following tables show the results of image-to-text retrieval on **MSCOCO** a
 ## Reference
 
 ```
-@InProceedings{Fu_2023_CVPR,
-    author    = {Fu, Zheren and Mao, Zhendong and Song, Yan and Zhang, Yongdong},
-    title     = {Learning Semantic Relationship Among Instances for Image-Text Matching},
-    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-    month     = {June},
-    year      = {2023},
-    pages     = {15159-15168}
+@inproceedings{fu2023learning,
+  title={Learning semantic relationship among instances for image-text matching},
+  author={Fu, Zheren and Mao, Zhendong and Song, Yan and Zhang, Yongdong},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={15159--15168},
+  year={2023}
 }
 ```
